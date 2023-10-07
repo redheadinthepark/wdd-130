@@ -22,7 +22,7 @@ main section {
 }
 #background {
     height: 725px;
-    background-color:f2f5e7;
+    background-color:#f2f5e7;
 }
 body {
    background-color:#f2f5e7;
@@ -40,7 +40,7 @@ header {
     color:#f4c400;
 }
 .msg {
-    background-color:f4c400;
+    background-color:#f4c400;
 }
 footer {
     background-color:#326e68;
