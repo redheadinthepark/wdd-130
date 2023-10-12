@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Poppins&display=swap');
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -6,6 +7,7 @@ nav a {
     text-align: center;
     color:#f2f5e7;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover {
     background-color:#105676;
@@ -20,12 +22,25 @@ nav a:hover {
 main section {
     text-align: center;
 }
+main section img {
+    box-sizing: border-box;
+}
 #background {
     height: 725px;
     background-color:#f2f5e7;
 }
 body {
    background-color:#f2f5e7;
+   font-family: Poppins, Helvetica, sans-serif;
+   font-size: 22px;
+   margin: 0;
+   padding: 0;
+}
+.rivers-card, .camping-card, rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #105676;
 }
 header {
     background-color:#326e68;
@@ -34,6 +49,10 @@ header {
     background-color:#105676;
     color:#f2f5e7;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color:#105676;
@@ -41,22 +60,35 @@ header {
 }
 .msg {
     background-color:#f4c400;
+    line-height:1.5em;
+    padding: 35px;
 }
 footer {
     background-color:#326e68;
     color:#f2f5e7;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 .home-title {
     color:#105676;
+    font-family: "Gochi Hand", "Courier New", serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 h4 {
     color:#f4c400;
 }
+h2 {
+    margin: 0;
+}
 .msg h2 {
-    color:#f4c400;
+    color:#105676;
+    font-family: "Gochi Hand", "Courier New", serif;
 }
 .msg p {
     color:#105676;
+    font-size: .8em
+    padding-bottom: 15px;
 }
 footer a {
     color:#105676;
@@ -73,10 +105,17 @@ footer p {
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
 }
 footer p a:hover {
     text-decoration: underline;
+}
+#logo_link {
+    padding-top: 5px;
+}
+footer .social img {
+    padding-top: 15px;
 }
