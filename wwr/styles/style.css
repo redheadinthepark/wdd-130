@@ -179,9 +179,9 @@ footer .social img {
     padding-top: 15px;
 }
 .home-grid {
-    display: grid
+    display: grid;
     grid-template-columns: 10fr;
-} 
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
