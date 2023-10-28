@@ -43,12 +43,6 @@ main section {
 main section img {
     box-sizing: border-box;
 }
-#background {
-    height: 725px;
-    background-color:#f2f5e7;
-    grid-column: 1/11;
-    grid-row: 2/3;
-}
 body {
    background-color:#f2f5e7;
    font-family: Poppins, Helvetica, sans-serif;
@@ -80,6 +74,12 @@ body {
 .rapids-card {
     grid-column: 8/10;
     grid-row: 2/3;
+}
+#background {
+    height: 725px;
+    background-color:#f2f5e7;
+    grid-column: 1/11;
+    grid-row: 4/9;
 }
 .mountains {
     width: 100%;
