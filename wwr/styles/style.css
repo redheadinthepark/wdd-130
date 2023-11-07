@@ -15,12 +15,15 @@ body {
     max-width: 1600px;
     margin: 0 auto;
 }
-
+nav {
+    display: flex;
+    justify-content: space-around;
+}
 nav a {
     text-align: center;
     color:#f2f5e7;
     text-decoration: none;
-    padding: 35px;
+    padding: 50px;
 }
 nav a:hover {
     background-color:#105676;
@@ -75,7 +78,7 @@ main section {
 main section img {
     box-sizing: border-box;
 }
-.home-grid, .rivers-card, .camping-card, rapids-card {
+.home-grid, .rivers-card, .camping-card, .rapids-card {
     margin: 100px 0;
 }
 .card-img {
