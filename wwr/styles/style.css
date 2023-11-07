@@ -197,6 +197,78 @@ footer.social img {
     padding-top: 15px;
 }
 
+/* Starting a new page in css named Rivers */
+
+.river-title {
+    font-size: 5em;
+    color:#105676;
+}  
+#river-msg {
+    text-align: center;
+    color:#105676;
+}
+h1 {
+    font-family: "Gochi Hand", "Courier New", serif;
+    color:#326e68
+}
+.rivers-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.river1, .river2, .river3 {
+    padding-left: 50px;
+}
+#river1-info, #river2-info, #river3-info {
+    padding-left: 50px;
+    color: #105676;
+} 
+.river1 {
+    grid-column: 5/10;
+    grid-row: 1/1;
+    padding-top: 50px;
+}
+#river1-info {
+    grid-column: 5/10;
+    grid-row: 2/4;
+    font-size: 14px;
+}
+.salmon-card {
+    grid-column: 1/5;
+    grid-row: 1/4;
+    padding-bottom: 75px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.river2 {
+    grid-column: 5/10;
+    grid-row: 5/5;
+}
+#river2-info {
+    grid-column: 5/10;
+    grid-row: 6/8;
+    font-size: 14px;
+}
+.desolation-card {
+    grid-column: 1/5;
+    grid-row: 5/8;
+    padding-bottom:75px;
+    padding-left: 50px;
+}
+.river3 {
+    grid-column: 5/10;
+    grid-row: 9/11;
+}
+#river3-info {
+    grid-column: 5/10;
+    grid-row: 10/12;
+    font-size: 14px;
+}
+.grand-canyon-card {
+    grid-column: 1/5;
+    grid-row: 9/12;
+    padding-left: 50px;
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
