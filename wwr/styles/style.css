@@ -6,12 +6,12 @@ body {
     margin: 0%;
     padding: 0;
  }
- #logo_link {
+#logo_link {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
 }
- #content {
+#content {
     max-width: 1600px;
     margin: 0 auto;
 }

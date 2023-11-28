@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap');
+
+body {
+    font-family: Poppins, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f7cdd0;
+    font-size: 30px;
+}
+
+.logo {
+    width: 250px;
+    height: auto;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+    padding: 75px;
+}
+nav a:hover {
+    background-color:#f9eccc;
+    color:#587d71;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.container .left,
+.container .right {
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: Kaushan script;
+    color: #587d71;
+    padding: 20px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: #587d71;
+}
+
+footer a:hover {
+    color:#f7cdd0;
+
+}
+
+.social {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.social a {
+    margin-right: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #f9eccc;
+    font-size: 1.2em;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f9eccc;
+}
+
