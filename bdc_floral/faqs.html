@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belmont Design Co | Home</title>
     <link rel="stylesheet" href="styles/style.css">
+
 </head>
+
 <body>
      <header>
         <a id="logo_link" href="index.html">
@@ -23,11 +25,11 @@
         
         <div class="image-container">
             <img src="images/wedding_bouquet_faq_page.jpg" alt="Bridal bouquet">
-            <img src="images/bouts.jpg" alt="Two boutonnieres">
+            <img src="images/bouts.jpg" alt="Two boutonnieres"><br>
         </div>
     </div>
     
-
+    <div class="accordion-container">
     <button class="accordion">1. What types of wearable floral designs do you offer?</button>
         <div class="panel">
         <p>We specialize in a wide range of wearable floral designs, including floral crowns, corsages, boutonnieres, floral jewelry, hair accessories, and more. Whether you're planning a wedding or a special date, we have a design to suit your needs.</p>
@@ -77,6 +79,7 @@
         <div class="panel">
         <p>We make it easy to reach us. You can fill out our contact form on our website, call us at (801) 234-5678, or send an email to Florals@BDCdesign.com. We're eager to hear from you and discuss how we can make your event even more special with our wearable floral designs. If you have any other questions or require additional information, please don't hesitate to contact us. We look forward to being a part of your special event!</p>
         </div>
+    <div/>
     </main>
     <footer>
         <div class="social">
@@ -96,6 +99,24 @@
         <p>(801) 234-5678</p>
         <p>Florals@BDCdesign.com</p>
     </footer>
-    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
