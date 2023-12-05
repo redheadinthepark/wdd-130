@@ -24,7 +24,7 @@
     <div class="left">
         <img src="images/wedding_bouquet_home_page.jpg" alt="Wedding bouquet">
     </div>
-    <div class="right">
+    <div class="righty">
         <h2>WELCOME TO YOUR FLORAL DREAMS COME TRUE</h2>
         <p>At Belmont Design Company's floral design studio, we take immense pride in creating bespoke, handcrafted floral arrangements that transform your special moments into timeless memories. We understand that you seek and invest in quality, and that's exactly what we offer. Elevate your moments with our floral designs, and let us be a part of your beautiful journey.</p>
         
@@ -34,7 +34,7 @@
 </div>
 
 <div class="container">
-    <div class="left">
+    <div class="lefty">
         <h2>QUALITY IN EVERY PETAL</h2>
         <p>Our florals are sourced from trusted suppliers and maintained at their peak freshness. With our meticulous care, every bloom in your arrangement will be at its most vibrant and beautiful for your event. We never compromise on the quality of our materials or the craftsmanship that goes into each piece.</p>
         
@@ -72,9 +72,10 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("demo").innerHTML = days + " days  " + hours + " hours  "
+  + minutes + " minutes and  " + seconds + " seconds! ";
 
   // If the count down is finished, write some text
   if (distance < 0) {
