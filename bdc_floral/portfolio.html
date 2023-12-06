@@ -25,21 +25,21 @@
     <div class="column">
         <div class="content">
             <img src="images/flower_crown.jpg" alt="Floral crown" style="width:100%">
-            <h4>Floral Crown</h4>
+            <h2>Floral Crown</h2>
             <p>Our floral crowns are a symbol of natural beauty and romantic charm, meticulously designed to elevate your special moments with a touch of ethereal elegance. Each crown showcases a harmonious blend of hand-picked flowers and greenery that adds a whimsical, bohemian flair to your look.</p>
         </div>
     </div>
     <div class="column">
         <div class="content">
         <img src="images/bout_yellow.jpg" alt="Boutonniere" style="width:100%">
-        <h4>Boutonniere</h4>
+        <h2>Boutonniere</h2>
         <p>The boutonniere is the finishing touch that speaks volumes about your style. Our boutonnieres are carefully crafted to complement formal attire with precision and sophistication, featuring a carefully selected combination of blooms and foliage to make a refined statement.</p>
         </div>
     </div>
     <div class="column">
         <div class="content">
         <img src="images/wrist_corsage.jpg" alt="Corsage" style="width:100%">
-        <h4>Corsage</h4>
+        <h2>Corsage</h2>
         <p>Corsages are a timeless accessory that adds a touch of floral grace to any formal occasion. Our corsages are meticulously designed to enhance your ensemble with delicate beauty, making you feel special and cherished at weddings and events.</p>
         </div>
     </div>
@@ -47,7 +47,7 @@
     <div class="column">
         <div class="content">
         <img src="images/bouquet_close_up.jpg" alt="Wedding bouquet" style="width:100%">
-        <h4>Wedding Bouquet</h4>
+        <h2>Wedding Bouquet</h2>
         <p>Your wedding bouquet is a masterpiece that symbolizes your love story. We create wedding bouquets that encapsulate your unique journey, carefully selecting blooms that resonate with your style and the atmosphere you envision for your special day.
         </p>
         </div>
@@ -55,14 +55,14 @@
     <div class="column">
         <div class="content">
         <img src="images/flower_ring.jpg" alt="Flower ring" style="width:100%">
-        <h4>Flower Ring</h4>
+        <h2>Flower Ring</h2>
         <p>Our flower rings are a delicate and fragrant adornment for your fingers. Handcrafted with the freshest blooms, they are the epitome of unique jewelry, designed to infuse your look with natural elegance for any occasion.</p>
         </div>
     </div>
     <div class="column">
         <div class="content">
         <img src="images/pocket_bout.jpg" alt="Pocket boutonniere" style="width:100%">
-        <h4>Pocket Boutonniere</h4>
+        <h2>Pocket Boutonniere</h2>
         <p>A pocket boutonniere is a dapper and stylish accessory for a sophisticated look. Our pocket boutonnieres are designed to fit seamlessly in your pocket, making a refined statement with a touch of nature's beauty at weddings, proms, and other formal events.</p>
         </div>
     </div>
@@ -70,11 +70,62 @@
     <div class="column">
         <div class="content">
         <img src="images/wedding_bouquet.jpg" alt="Wedding bouquet" style="width:100%">
-        <h4>Wedding Bouquet</h4>
+        <h2>Wedding Bouquet</h2>
         <p>Your wedding bouquet is a masterpiece that symbolizes your love story. We create wedding bouquets that encapsulate your unique journey, carefully selecting blooms that resonate with your style and the atmosphere you envision for your special day.</p>
         </div>
     </div>
     </div>
+
+    <script>
+        filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+    </script>
+
     </main>
     <footer>
     <div class="social">
