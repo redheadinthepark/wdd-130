@@ -141,29 +141,19 @@ footer a {
 
 .row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
 }
-  
-.columnA,
-.columnB,
-.columnC,
-.columnD,
-.columnE,
-.columnF,
-.columnG {
+
+.content {
     background-color: #f9eccc;
-    border-radius: 10px;
-}
-  
-  /* Content */
-  .content {
-    background-color: #f9eccc;
-    padding: 30px;
+    padding: 20px;
     font-size: 20px;
     font-family: Poppins;
     color: #587d71;
-  }
+    border-radius: 10px;
+    overflow: hidden;
+}
   
 
 /* Starting FAQ page  */
@@ -216,19 +206,19 @@ h1 {
     border: none;
     outline: none;
     transition: 0.4s;
+    border-radius: 10px;
   }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
   .active, 
   .accordion:hover {
     background-color: #f7cdd0;
   }
   
-  /* Style the accordion panel. Note: hidden by default */
   .panel {
     padding: 0 18px;
     background-color: #f7cdd0;
     color: #587d71;
     display: none;
     overflow: hidden;
+    border-radius: 10px;
   }
